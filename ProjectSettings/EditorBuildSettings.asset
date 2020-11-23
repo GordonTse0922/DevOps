@@ -18,12 +18,24 @@ EditorBuildSettings:
     path: Assets/Scenes/StaffScene1.unity
     guid: 5489975f414194e6888976a3a9b65374
   - enabled: 1
-    path: Assets/Scenes/DeployScene.unity
-    guid: d3c18fa64ab5b4651b70184e2422c153
-  - enabled: 0
-    path: Assets/Scenes/BigBang_tutorial.unity
-    guid: 1272892cc69b64653a6ea3ddd4937bb3
+    path: Assets/Scenes/IntroducingDeployment.unity
+    guid: 0f1d79db8641542f2b24da03549cc297
   - enabled: 1
     path: Assets/Scenes/BigBangIntro.unity
     guid: 6b105763abc2b42faaaa3852c1c0b785
+  - enabled: 1
+    path: Assets/Scenes/CanaryIntro.unity
+    guid: 88d9c51b862b7491098661f339078fa6
+  - enabled: 1
+    path: Assets/Scenes/BlueGreenIntro.unity
+    guid: c4cfc48f19dfa4021a98391a7abe12f0
+  - enabled: 1
+    path: Assets/Scenes/DeployScene.unity
+    guid: d3c18fa64ab5b4651b70184e2422c153
+  - enabled: 1
+    path: Assets/Scenes/TodoTask.unity
+    guid: 53d8c4de3a74f41bdadd5c07c8bc85d7
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: e7951abd8a1264521b1b750f70baeeb7
   m_configObjects: {}
