@@ -15,6 +15,7 @@ public class ChangeScenes : MonoBehaviour {
     }
 
     public void GoToInstruction() {
+        PlayerPrefs.DeleteAll();
         SceneManager.LoadScene(1);
     }
 
@@ -53,6 +54,12 @@ public class ChangeScenes : MonoBehaviour {
     }
     public void GoToGame(){
         SceneManager.LoadScene(10);
+    }
+    public void GoToReport_1(){
+        SceneManager.LoadScene(11);
+    }
+    public void GoToReport_2(){
+        SceneManager.LoadScene(12);
     }
     
     public void SelectedBigBang(){

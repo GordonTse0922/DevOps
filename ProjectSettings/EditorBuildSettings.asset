@@ -38,4 +38,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game.unity
     guid: e7951abd8a1264521b1b750f70baeeb7
+  - enabled: 1
+    path: Assets/Scenes/WeeklyReport.unity
+    guid: e12275f6ec8c544a2bfad0a1565517f7
+  - enabled: 1
+    path: Assets/Scenes/WeeklyReport_2.unity
+    guid: 1a7ef0453a7a84c17aaf529f5fc72453
   m_configObjects: {}
