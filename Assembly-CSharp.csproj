@@ -39,6 +39,7 @@
      <Compile Include="Assets\Scripts\BlankManager.cs" />
      <Compile Include="Assets\Scripts\ChangeScenes.cs" />
      <Compile Include="Assets\Scripts\DisplayLevels.cs" />
+     <Compile Include="Assets\Scripts\Feature_Timer.cs" />
      <Compile Include="Assets\Scripts\IngredientManager.cs" />
      <Compile Include="Assets\Scripts\ItemAnimation.cs" />
      <Compile Include="Assets\Scripts\ItemCount.cs" />
