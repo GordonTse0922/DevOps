@@ -4263,10 +4263,6 @@ MonoBehaviour:
   ProgramTimer: {fileID: 1405045790}
   TestTimer: {fileID: 1158302023}
   DeployTimer: {fileID: 1061986007}
-  featureTimer2: {fileID: 1928227869}
-  ProgramTimer2: {fileID: 1311603202}
-  TestTimer2: {fileID: 1102147770}
-  DeployTimer2: {fileID: 1827925815}
   F1C_UI: {fileID: 614501156}
   usableStaff: 
   WIPTasks: 

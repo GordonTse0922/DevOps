@@ -19,6 +19,22 @@ public class Main: MonoBehaviour {
     int time_feature1_Program;
     int time_feature1_Test;
     int time_feature1_Deploy;
+    bool vacant_feature1_Design = true;
+    bool vacant_feature1_Program = true;
+    bool vacant_feature1_Test = true;
+    bool vacant_feature1_Deploy = true;
+    int staff_feature2_Design;
+    int staff_feature2_Program;
+    int staff_feature2_Test;
+    int staff_feature2_Deploy;
+    int time_feature2_Design;
+    int time_feature2_Program;
+    int time_feature2_Test;
+    int time_feature2_Deploy;
+    bool vacant_feature2_Design = true;
+    bool vacant_feature2_Program = true;
+    bool vacant_feature2_Test = true;
+    bool vacant_feature2_Deploy = true;
     int time_int = 10;
     int F1_count = 0;
     int week;
@@ -47,6 +63,11 @@ public class Main: MonoBehaviour {
     public TMP_Text ProgramTimer;
     public TMP_Text TestTimer;
     public TMP_Text DeployTimer;
+    public TMP_Text featureTimer2;
+    public TMP_Text ProgramTimer2;
+    public TMP_Text TestTimer2;
+    public TMP_Text DeployTimer2;
+
     public TMP_Text F1C_UI;
     public List<int> usableStaff;
     public List<int> WIPTasks;
@@ -78,6 +99,10 @@ public class Main: MonoBehaviour {
     GameObject ProgramingFeature;
     GameObject TestingFeature;
     GameObject DeployingFeature;
+    GameObject designingFeature2;
+    GameObject ProgramingFeature2;
+    GameObject TestingFeature2;
+    GameObject DeployingFeature2;
     GameObject WLFeature;
     GameObject ErrorMessage;
     GameObject Error;
@@ -96,6 +121,11 @@ public class Main: MonoBehaviour {
     GameObject programmer;
     GameObject tester;
     GameObject deployer;
+    GameObject designer2nd;
+    GameObject worker2nd;
+    GameObject programmer2nd;
+    GameObject tester2nd;
+    GameObject deployer2nd;
     void Awake() {
         Invoke("OnEnable",0);
         int WaitList_Feature1=PlayerPrefs.GetInt("WaitList-Feature1");
@@ -118,6 +148,10 @@ public class Main: MonoBehaviour {
         ProgramingFeature = GameObject.Find("Program_Feature1");
         TestingFeature = GameObject.Find("Test_Feature1");
         DeployingFeature = GameObject.Find("Deploy_Feature1");
+        designingFeature2 = GameObject.Find("Design_Feature2");
+        ProgramingFeature2 = GameObject.Find("Program_Feature2");
+        TestingFeature2 = GameObject.Find("Test_Feature2");
+        DeployingFeature2 = GameObject.Find("Deploy_Feature2");
         WLFeature = GameObject.Find("WL-Feature1");
         ErrorMessage = GameObject.Find("ErrorMessage");
         Error = GameObject.Find("Error");
@@ -132,6 +166,10 @@ public class Main: MonoBehaviour {
         programmer = GameObject.Find("Programmer1");
         tester = GameObject.Find("Tester1");
         deployer = GameObject.Find("Deployer1");
+        designer2nd = GameObject.Find("worker2");
+        programmer2nd = GameObject.Find("Programmer2");
+        tester2nd = GameObject.Find("Tester2");
+        deployer2nd = GameObject.Find("Deployer2");
         week = PlayerPrefs.GetInt("week")+1;
         if(week==1){
             usableStaff = new List<int> (PlayerPrefsX.GetIntArray("staff")); 
@@ -210,6 +248,10 @@ public class Main: MonoBehaviour {
             ProgramingFeature.SetActive(false);
             TestingFeature.SetActive(false);
             DeployingFeature.SetActive(false);
+            designingFeature2.SetActive(false);
+            ProgramingFeature2.SetActive(false);
+            TestingFeature2.SetActive(false);
+            DeployingFeature2.SetActive(false);
             FinishFeature1.SetActive(false);
             FinishFeature2.SetActive(false);
             FinishFeature3.SetActive(false);
@@ -231,6 +273,10 @@ public class Main: MonoBehaviour {
             ProgramingFeature.SetActive(false);
             TestingFeature.SetActive(false);
             DeployingFeature.SetActive(false);
+            designingFeature2.SetActive(false);
+            ProgramingFeature2.SetActive(false);
+            TestingFeature2.SetActive(false);
+            DeployingFeature2.SetActive(false);
             FinishFeature1.SetActive(false);
             FinishFeature2.SetActive(false);
             FinishFeature3.SetActive(false);
@@ -564,13 +610,28 @@ public class Main: MonoBehaviour {
     public void Select_f1t1()
     {
         f1t1.SetActive(false);
-        if (selected_staff == 1) { time_feature1_Design = 8; }
-        else if (selected_staff == 2) { time_feature1_Design = 5; }
-        else{time_feature1_Design = 16;}
-        WhoIsWorking(selected_staff);
-        designingFeature.SetActive(true);
-        designer.SetActive(true);
-        featureTimer.text = time_feature1_Design + "hrs";
+        if (vacant_feature1_Design)
+        {
+            if (selected_staff == 1) { time_feature1_Design = 8; }
+            else if (selected_staff == 2) { time_feature1_Design = 5; }
+            else { time_feature1_Design = 16; }
+            WhoIsWorking(selected_staff);
+            designingFeature.SetActive(true);
+            designer.SetActive(true);
+            featureTimer.text = time_feature1_Design + "hrs";
+            vacant_feature1_Design = false;
+        }
+        else
+        {
+            if (selected_staff == 1) { time_feature2_Design = 8; }
+            else if (selected_staff == 2) { time_feature2_Design = 5; }
+            else { time_feature2_Design = 16; }
+            WhoIsWorking(selected_staff);
+            designingFeature2.SetActive(true);
+            designer2nd.SetActive(true);
+            featureTimer.text = time_feature2_Design + "hrs";
+            vacant_feature2_Design = false;
+        }
     }
     public void Select_f1t2()
     {
