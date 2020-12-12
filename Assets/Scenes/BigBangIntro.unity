@@ -156,7 +156,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 673.38, y: 450.5}
+  m_AnchoredPosition: {x: 629, y: 413}
   m_SizeDelta: {x: 114.2492, y: 90.03104}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &183957821
@@ -368,7 +368,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 810.89, y: 450.5}
+  m_AnchoredPosition: {x: 766.51, y: 413.00003}
   m_SizeDelta: {x: 119.290924, y: 90.026955}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &275570869
@@ -485,8 +485,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 361, y: -0.0000076294}
-  m_SizeDelta: {x: 877.5222, y: 296.29712}
+  m_AnchoredPosition: {x: 361, y: 5.8}
+  m_SizeDelta: {x: 877.5222, y: 307.89075}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &301674899
 MonoBehaviour:
@@ -520,9 +520,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'For Big Bang deployment,
+  m_Text: 'Big Bang deployment:
 
-    .........................................'
+
+    All users of a system are moved to the new
+    system at a specific date and time.'
 --- !u!222 &301674900
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -705,7 +707,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 522, y: 450.5}
+  m_AnchoredPosition: {x: 477.62003, y: 413.00003}
   m_SizeDelta: {x: 122.51668, y: 95.464}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1360768893
@@ -1049,22 +1051,22 @@ PrefabInstance:
     - target: {fileID: 8953820180375706725, guid: 8bc34d130aa244191966e71ea9d2ce58,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 689
+      value: 641.97
       objectReference: {fileID: 0}
     - target: {fileID: 8953820180375706725, guid: 8bc34d130aa244191966e71ea9d2ce58,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -421
+      value: -428.3
       objectReference: {fileID: 0}
     - target: {fileID: 8953820180375706725, guid: 8bc34d130aa244191966e71ea9d2ce58,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 177.06772
+      value: 177.06851
       objectReference: {fileID: 0}
     - target: {fileID: 8953820180375706725, guid: 8bc34d130aa244191966e71ea9d2ce58,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 153.09595
+      value: 138.56873
       objectReference: {fileID: 0}
     - target: {fileID: 8953820180375706725, guid: 8bc34d130aa244191966e71ea9d2ce58,
         type: 3}

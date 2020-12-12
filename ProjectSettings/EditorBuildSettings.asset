@@ -44,4 +44,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WeeklyReport_2.unity
     guid: 1a7ef0453a7a84c17aaf529f5fc72453
+  - enabled: 1
+    path: Assets/Scenes/WeeklyReport_3.unity
+    guid: 1c01b8c3db41b4e1798986e943c0a053
+  - enabled: 1
+    path: Assets/Scenes/FinalReport.unity
+    guid: f15ab103470e04ee68b88873a126cfe7
+  - enabled: 1
+    path: Assets/Scenes/FinalReport_2.unity
+    guid: 8e3ca714044f6409cbd634d83bf7e3da
+  - enabled: 1
+    path: Assets/Scenes/TodoTask2.unity
+    guid: 560e3104767244d8599c40709d7b22a7
+  - enabled: 1
+    path: Assets/Scenes/SeverUpgrade.unity
+    guid: e3d5d6b9feb7a4719a56bf2a8de09f80
   m_configObjects: {}

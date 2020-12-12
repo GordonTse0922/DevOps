@@ -284,8 +284,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 361, y: -0.0000076294}
-  m_SizeDelta: {x: 877.5222, y: 296.29712}
+  m_AnchoredPosition: {x: 303, y: -0.0000076294}
+  m_SizeDelta: {x: 911.97205, y: 549.0013}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &652120997
 MonoBehaviour:
@@ -308,10 +308,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 54
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 5
+    m_MinSize: 0
     m_MaxSize: 54
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -319,7 +319,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Introduction + Tutorial of the game ...........................
+  m_Text: "Richard\u2019s DevOps team consists of designers, programmers, testers
+    and deployers, each with differing levels of capabilities. It is his job to assign
+    tasks to each staff member each week, that could minimize the time but maximizes
+    the productivity. This includes making the right decisions when facing errors.
+    At the end of each week, a Weekly Report that contains the DevOps metrics is
+    given to Richard to evaluate the deployment success rate. \n\nThe more features
+    Richard\u2019s DevOps team can deploy, the more income and popularity their company
+    has. The player should optimise his/her choices when facing dilemma and make
+    the correct trade-offs.\n\n"
 --- !u!222 &652120998
 CanvasRenderer:
   m_ObjectHideFlags: 0

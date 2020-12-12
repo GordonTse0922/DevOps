@@ -212,7 +212,7 @@ MonoBehaviour:
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
-  m_ScreenMatchMode: 0
+  m_ScreenMatchMode: 2
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -295,8 +295,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1111.7, y: 916.1}
-  m_SizeDelta: {x: 157.73166, y: 157.58607}
+  m_AnchoredPosition: {x: 1381.6997, y: 876.29}
+  m_SizeDelta: {x: 189.47318, y: 190.46132}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &480429720
 MonoBehaviour:
@@ -423,8 +423,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 361.22302, y: 0.000030517578}
-  m_SizeDelta: {x: 877.5222, y: 296.29712}
+  m_AnchoredPosition: {x: 371, y: -6.7}
+  m_SizeDelta: {x: 916.2742, y: 542.3109}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &832860186
 MonoBehaviour:
@@ -447,10 +447,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 54
+    m_FontSize: 44
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 5
+    m_MinSize: 4
     m_MaxSize: 54
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -458,9 +458,22 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'For Blue Green deployment,
+  m_Text: 'Blue Green deployment:
 
-    .........................................'
+
+    Maintain two identical production environments
+    work in parallel
+
+    One is the currently-running production environment receiving
+    all user traffic (Blue).
+
+
+    Another is the new version of the application
+    to test for functionality and performance (Green).
+
+
+
+'
 --- !u!222 &832860187
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -504,8 +517,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1429.2, y: 916.1}
-  m_SizeDelta: {x: 200.04321, y: 157.58377}
+  m_AnchoredPosition: {x: 1674, y: 875}
+  m_SizeDelta: {x: 206.84491, y: 187.87192}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1462995055
 MonoBehaviour:
@@ -688,8 +701,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1391, y: -830.6}
-  m_SizeDelta: {x: 350.9965, y: 190.36646}
+  m_AnchoredPosition: {x: 1382, y: -946}
+  m_SizeDelta: {x: 382.887, y: 259.46222}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1731960022
 MonoBehaviour:
@@ -920,8 +933,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 822.8, y: 916.1}
-  m_SizeDelta: {x: 184.63359, y: 157.58139}
+  m_AnchoredPosition: {x: 1070.7997, y: 878.58997}
+  m_SizeDelta: {x: 240.99876, y: 185.76413}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1898993772
 MonoBehaviour:

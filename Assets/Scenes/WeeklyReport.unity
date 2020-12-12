@@ -392,6 +392,46 @@ PrefabInstance:
       propertyPath: m_Name
       value: week
       objectReference: {fileID: 0}
+    - target: {fileID: 1665849131782591683, guid: e51be5ecf079d492d88929e5ce96ff52,
+        type: 3}
+      propertyPath: m_text
+      value: Feature Deployed:0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8965839342637593893, guid: e51be5ecf079d492d88929e5ce96ff52,
+        type: 3}
+      propertyPath: m_text
+      value: 'Current Balance: $6000'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8965839342671088318, guid: e51be5ecf079d492d88929e5ce96ff52,
+        type: 3}
+      propertyPath: m_text
+      value: 'Weekly Net Profit: $5000'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8965839342998242252, guid: e51be5ecf079d492d88929e5ce96ff52,
+        type: 3}
+      propertyPath: m_text
+      value: 'Fixed Errors: 0'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8965839343807999128, guid: e51be5ecf079d492d88929e5ce96ff52,
+        type: 3}
+      propertyPath: m_text
+      value: Feature WIP:1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8965839343848402459, guid: e51be5ecf079d492d88929e5ce96ff52,
+        type: 3}
+      propertyPath: m_text
+      value: 'Weekly Revenue: $5000'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8965839344090960036, guid: e51be5ecf079d492d88929e5ce96ff52,
+        type: 3}
+      propertyPath: m_text
+      value: 'Weekly Cost: $0'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8965839344214478175, guid: e51be5ecf079d492d88929e5ce96ff52,
+        type: 3}
+      propertyPath: m_text
+      value: 'Errors Occured: 0'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e51be5ecf079d492d88929e5ce96ff52, type: 3}
 --- !u!1 &1012518200913396241 stripped

@@ -156,8 +156,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1419, y: -855.6}
-  m_SizeDelta: {x: 245.39688, y: 190.3664}
+  m_AnchoredPosition: {x: 1397, y: -959}
+  m_SizeDelta: {x: 313.62082, y: 259.46207}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &365075307
 MonoBehaviour:
@@ -607,8 +607,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1143, y: 900.93}
-  m_SizeDelta: {x: 170.15475, y: 145.90054}
+  m_AnchoredPosition: {x: 1378, y: 946}
+  m_SizeDelta: {x: 216.54309, y: 194.0733}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &890485263
 MonoBehaviour:
@@ -735,8 +735,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 361.22302, y: 0.000030517578}
-  m_SizeDelta: {x: 877.5222, y: 296.29712}
+  m_AnchoredPosition: {x: 358.8, y: 2.5}
+  m_SizeDelta: {x: 1002.0325, y: 620.0242}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &895554981
 MonoBehaviour:
@@ -762,7 +762,7 @@ MonoBehaviour:
     m_FontSize: 54
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 5
+    m_MinSize: 4
     m_MaxSize: 54
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -770,9 +770,18 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'For Canary deployment,
+  m_Text: 'Canary deployment:
 
-    .........................................'
+
+    It also maintains two production environment.
+
+
+    Instead
+    of switching from blue to green in one step, you deploy a new application code
+    in a small part of the production infrastructure.
+
+
+'
 --- !u!222 &895554982
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -816,8 +825,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1523.4, y: 900.94}
-  m_SizeDelta: {x: 148.17938, y: 145.89838}
+  m_AnchoredPosition: {x: 1691.5498, y: 942.64014}
+  m_SizeDelta: {x: 203.07391, y: 200.79291}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1251029359
 MonoBehaviour:
@@ -934,8 +943,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 820, y: 903.68}
-  m_SizeDelta: {x: 197.05748, y: 151.36957}
+  m_AnchoredPosition: {x: 1070, y: 946.00006}
+  m_SizeDelta: {x: 245.23018, y: 185.26886}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1251155786
 MonoBehaviour:
