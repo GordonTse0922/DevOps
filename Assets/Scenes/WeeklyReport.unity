@@ -270,6 +270,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1046331954 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8965839342637593893, guid: e51be5ecf079d492d88929e5ce96ff52,
+    type: 3}
+  m_PrefabInstance: {fileID: 1012518200913396240}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1012518200913396240
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -397,6 +409,11 @@ PrefabInstance:
       propertyPath: m_text
       value: Feature Deployed:0
       objectReference: {fileID: 0}
+    - target: {fileID: 6432901234973463753, guid: e51be5ecf079d492d88929e5ce96ff52,
+        type: 3}
+      propertyPath: m_Name
+      value: Current Balance
+      objectReference: {fileID: 0}
     - target: {fileID: 8965839342637593893, guid: e51be5ecf079d492d88929e5ce96ff52,
         type: 3}
       propertyPath: m_text
@@ -465,3 +482,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   report_week: {fileID: 1012518200913396242}
+  comment_text: {fileID: 0}
+  currentBalance: {fileID: 1046331954}

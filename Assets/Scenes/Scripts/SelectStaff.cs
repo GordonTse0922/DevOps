@@ -226,6 +226,7 @@ public class SelectStaff : MonoBehaviour
     }
     public void SaveAndExit(){
         PlayerPrefsX.SetIntArray("staff",selected.ToArray());
+        PlayerPrefs.SetInt("capital",capital);
         //PlayerPrefsX.Save();
         SceneManager.LoadScene(4);
     }
