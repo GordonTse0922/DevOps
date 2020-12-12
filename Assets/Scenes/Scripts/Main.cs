@@ -19,7 +19,23 @@ public class Main: MonoBehaviour {
     int time_feature1_Program;
     int time_feature1_Test;
     int time_feature1_Deploy;
-    int time_int = 30;
+    bool vacant_feature1_Design = true;
+    bool vacant_feature1_Program = true;
+    bool vacant_feature1_Test = true;
+    bool vacant_feature1_Deploy = true;
+    int staff_feature2_Design;
+    int staff_feature2_Program;
+    int staff_feature2_Test;
+    int staff_feature2_Deploy;
+    int time_feature2_Design;
+    int time_feature2_Program;
+    int time_feature2_Test;
+    int time_feature2_Deploy;
+    bool vacant_feature2_Design = true;
+    bool vacant_feature2_Program = true;
+    bool vacant_feature2_Test = true;
+    bool vacant_feature2_Deploy = true;
+    int time_int = 10;
     int F1_count = 0;
     int week;
     bool haveError = true;
@@ -195,6 +211,10 @@ public class Main: MonoBehaviour {
             }
 
         }
+        WIPTasks=new List<int> (PlayerPrefsX.GetIntArray("WIPTasks"));
+            foreach (int task in WIPTasks){
+                WIP_Tasks(task);
+        }
         if (week >= 2)
         {
             // week 2 activation
@@ -216,10 +236,6 @@ public class Main: MonoBehaviour {
             WLError.SetActive(false);
             FinishError.SetActive(false);
             WeekEnd.SetActive(false);
-            WIPTasks=new List<int> (PlayerPrefsX.GetIntArray("WIPTasks"));
-            foreach (int task in WIPTasks){
-                WIP_Tasks(task);
-            }
             F1_count=WaitList_Feature1;
             F1C_UI.text = F1_count + "/3";
             // deployer.SetActive(false);
@@ -271,29 +287,18 @@ public class Main: MonoBehaviour {
             CancelInvoke("timer");
             if(designingFeature.activeSelf){
             Debug.Log("1");
-            PlayerPrefs.SetInt("design_timer", time_feature1_Design);
-            if(designer.activeSelf){
-                PlayerPrefs.SetInt("design_worker", staff_feature1_Design);
-            }
             WIPTasks.Add(1);
             }
             if(ProgramingFeature.activeSelf){
             Debug.Log("2");
-            PlayerPrefs.SetInt("program_timer", time_feature1_Program);
-            PlayerPrefs.SetInt("program_worker", staff_feature1_Program);
             WIPTasks.Add(2);
             }
             if(TestingFeature.activeSelf){
              Debug.Log("3");
-             PlayerPrefs.SetInt("test_timer", time_feature1_Test);
-
-             PlayerPrefs.SetInt("test_worker", staff_feature1_Test);
              WIPTasks.Add(3);
             }
             if(DeployingFeature.activeSelf){
              Debug.Log("4");
-             PlayerPrefs.SetInt("deploy_timer", time_feature1_Deploy);
-            PlayerPrefs.SetInt("deploy_worker", staff_feature1_Deploy);
              WIPTasks.Add(4);
             }
             Invoke("OnDisable",0);
@@ -343,35 +348,18 @@ public class Main: MonoBehaviour {
             switch (task)
             {
                 case 1:
-                    time_feature1_Design=PlayerPrefs.GetInt("design_timer");
-                    staff_feature1_Design=PlayerPrefs.GetInt("design_worker");
                     designingFeature.SetActive(true);
-                    if(staff_feature1_Design==0){
-                        designer.SetActive(false);
-                    }
-                    else{
-                        WhoIsWorking(staff_feature1_Design);
-                    }
                     break;
 
                 case 2:
-                    time_feature1_Program=PlayerPrefs.GetInt("program_timer");
-                    staff_feature1_Program=PlayerPrefs.GetInt("program_worker");
-                    WhoIsWorking(staff_feature1_Program);
                     ProgramingFeature.SetActive(true);
                     break;
 
                 case 3:
-                    time_feature1_Test=PlayerPrefs.GetInt("test_timer");
-                    staff_feature1_Test=PlayerPrefs.GetInt("test_worker");
-                    WhoIsWorking(staff_feature1_Test);
                     TestingFeature.SetActive(true);
                     break;
                 
                 case 4:
-                    time_feature1_Deploy=PlayerPrefs.GetInt("deploy_timer");
-                    staff_feature1_Deploy=PlayerPrefs.GetInt("deploy_worker");
-                    WhoIsWorking(staff_feature1_Deploy);
                     DeployingFeature.SetActive(true);
                     break;
             }
@@ -724,7 +712,6 @@ public class Main: MonoBehaviour {
                 //CancelInvoke("Programming_Feature");
             }
         }
-    }
 
         void Testing_Feature()
         {
@@ -775,3 +762,4 @@ public class Main: MonoBehaviour {
         
 
     }
+}
